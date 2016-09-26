@@ -61,8 +61,8 @@ void insertion_sort(Iter begin, Iter end)
 			begin[loc+1] = begin[loc];
 			--loc;
 		}
-		
-		begin[loc + 1] = val;		
+
+		begin[loc + 1] = val;
 	}
 }
 

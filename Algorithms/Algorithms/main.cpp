@@ -13,7 +13,7 @@
 #include "myalgorithms.h"
 
 // const int TEST_DATA[] = { 16 };
-const int TEST_DATA[] = { 16, 7, 10, 1, 5, 11, 3, 8, 14, 4, 2, 12, 6, 13, 9, 15 };
+const int TEST_DATA[] = { 16, 7, 10, 1, 5, 11, 3, 8, 14, 4, 1, 12, 6, 13, 9, 15 };
 const int TEST_DATA_SIZE = sizeof(TEST_DATA) / sizeof(TEST_DATA[0]);
 
 const int SEARCH_TEST_NUM = 4;
@@ -83,7 +83,7 @@ void testBinFind()
 	std::vector<int> vec(TEST_DATA, TEST_DATA + TEST_DATA_SIZE);
 	std::sort(vec.begin(), vec.end());
 	printVector(vec);
-	
+
 
 	for (int i = 0; i < SEARCH_TEST_NUM; ++i) {
 		int val = 0;
@@ -123,7 +123,7 @@ void testSort()
 	insertion_sort(vec.begin(), vec.end());
 	printf("My insertion sort:\n");
 	printVector(vec);
-	
+
 	vec.assign(TEST_DATA, TEST_DATA + TEST_DATA_SIZE);
 	buble_sort(vec.begin(), vec.end());
 	printf("My buble sort:\n");
@@ -133,7 +133,7 @@ void testSort()
 	shell_sort(vec.begin(), vec.end());
 	printf("My shell sort:\n");
 	printVector(vec);
-	
+
 
 	printf("----------------------------------\n");
 }
